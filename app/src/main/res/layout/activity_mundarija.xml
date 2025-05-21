@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MundarijaActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop">
+
+
+
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="@drawable/layout_top" />
+
+        <View
+            android:id="@+id/top_view_inner_radii"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/top_view"
+            android:background="@drawable/layout_inner" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lesson_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Mundarija"
+            android:textColor="#0E28B5"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout">
+
+        <RelativeLayout
+            android:id="@+id/relate_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_lessons"
+                    android:layout_width="195dp"
+                    android:layout_height="260dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="20dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:contentDescription="Literature"
+                        android:padding="20dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/book"
+                        app:srcCompat="@drawable/book" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Nazariy ma'lumotlar"
+                        android:textColor="#1537F6"
+                        android:gravity="center"
+                        android:textSize="28sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_laboratory"
+                    android:layout_width="185dp"
+                    android:layout_height="260dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="20dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="Literature"
+                        android:padding="25dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/img_5"
+                        app:srcCompat="@drawable/ikkin" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="Video"
+                        android:textColor="#1537F6"
+                        android:gravity="center"
+                        android:textSize="28sp"
+                        app:fontFamily="sans-serif-black" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/center_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_layout"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_literature"
+                    android:layout_width="185dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="20dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:contentDescription="Literature"
+                        android:padding="20dp"
+                        android:src="@drawable/author"
+                        app:srcCompat="@drawable/uchn" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Muallif"
+                        android:gravity="center"
+                        android:textColor="#1537F6"
+                        android:textSize="28sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
+

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pedagogik dasturiy vositalar</string>
+    <string name="interesting_facts">interesting_facts</string>
+    <string name="literature">literature</string>
+    <string name="lessons">lessons</string>
+    <string name="laboratory">laboratory</string>
+    <string name="test">test</string>
+    <string name="internet">internet</string>
+    <string name="lesson_tittle">lesson tittle</string>
+    <string name="back">back</string>
+    <string name="online_lesson">Online lesson</string>
+    <string name="network">Network</string>
+    <string name="hardware">Hardware</string>
+    <string name="mobile_phones">Mobile phones</string>
+    <string name="video">Video</string>
+
+
+</resources>
